@@ -90,21 +90,24 @@ Designed as a reference project demonstrating clean Python architecture and Stre
 
 ```
 tic-tac-toe-streamlit/
-├── main.py                # Entry point — wires state + UI together
+│
+├── assets/                # Screenshots/Icons
 ├── core/                   # Game logic — no Streamlit UI concerns
 │   ├── __init__.py          # Empty File
 │   ├── constants.py          # Win combinations, cell colours
 │   ├── state.py               # session_state initialization
 │   └── game.py                 # Move handling, win/draw detection, reset
-├── gui/                    # Presentation layer
-│   ├── __init__.py          # Empty File
-│   ├── layout.py             # Page scaffold (title, sections, reset button)
-│   ├── board.py                # 3x3 button grid
-│   ├── scoreboard.py            # X/O/Draw score metrics
-│   └── styles.py                 # Dynamic per-cell CSS injection
-├── tests/
-│   └── test_game.py         # End-to-end tests via Streamlit's AppTest
-├── requirements.txt          # Runtime & Test dependency
+├── gui/                         # Presentation layer
+│   ├── __init__.py               # Empty File
+│   ├── layout.py                  # Page scaffold (title, sections, reset button)
+│   ├── board.py                    # 3x3 button grid
+│   ├── scoreboard.py                # X/O/Draw score metrics
+│   └── styles.py                     # Dynamic per-cell CSS injection
+├── tests/                             # Game Testing 
+│   └── test_game.py                    # End-to-end tests via Streamlit's AppTest
+├── main.py                              # Entry point — wires state + UI together
+├── requirements.txt                      # Runtime & Test dependency
+├── LICENSE                                # MIT LICENSE
 └── .gitignore
 ```
 
@@ -113,7 +116,7 @@ tic-tac-toe-streamlit/
 ## 🧪 Tech Stack
 
 | Component | Implementation |
-|---|---|
+|-----------|----------------|
 | Language | Python |
 | Framework | Streamlit |
 | Testing | pytest |
@@ -171,14 +174,20 @@ streamlit run main.py
 
 ## 📸 Preview
 
-### 1. Main Game Screen
-![Preview](assets/game.png)
+### 1. Main Game
+![Preview](assets/Tic-1.png)
 
-### 2. Winner Screen
-![Winner](assets/winner.png)
+### 2. Player `X` Winner
+![Winner](assets/Tic-2.png)
 
-### 3. Scoreboard
-![Scoreboard](assets/scoreboard.png)
+### 3. Player `O` Winner
+![Winner](assets/Tic-3.png)
+
+### 4. Draw
+![Draw](assets/Tic-4.png)
+
+### 5. Scoreboard
+![Scoreboard](assets/Tic-5.png)
 
 ---
 
@@ -198,3 +207,4 @@ streamlit run main.py
 
 If you like this project, consider giving it a ⭐ on GitHub!
 
+---
